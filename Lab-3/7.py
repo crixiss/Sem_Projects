@@ -1,3 +1,3 @@
-nums = [1, 2, 3, 4, 5]
+nums = list(map(int, input("Enter numbers separated by space: ").split()))
 doubled = list(map(lambda x: x * 2, nums))
 print(doubled)
