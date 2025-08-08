@@ -1,5 +1,8 @@
-def sum_numbers(*args):
-    return sum(args)
+def book_info(title, author, year):
+    print(f"Title: {title}, Author: {author}, Year: {year}")
 
-nums = list(map(float, input("Enter numbers separated by space: ").split()))
-print(sum_numbers(*nums))
+title = input("Enter book title: ")
+author = input("Enter author name: ")
+year = int(input("Enter publication year: "))
+
+book_info(title=title, author=author, year=year)

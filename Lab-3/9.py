@@ -1,3 +1,3 @@
-temps_celsius = list(map(float, input("Enter temperatures in Celsius separated by space: ").split()))
-temps_fahrenheit = list(map(lambda c: (c * 9/5) + 32, temps_celsius))
-print("Fahrenheit:", temps_fahrenheit)
+nums = list(map(int, input("Enter numbers separated by space: ").split()))
+div_by_10 = list(filter(lambda x: x % 10 == 0, nums))
+print(div_by_10)

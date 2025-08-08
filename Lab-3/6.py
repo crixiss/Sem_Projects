@@ -1,7 +1,9 @@
-square = lambda x: x ** 2
+def student_profile(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+name = input("Enter name: ")
+age = input("Enter age: ")
+grade = input("Enter grade: ")
 
-print(square(num1))
-print(square(num2))
+student_profile(name=name, age=age, grade=grade)
