@@ -1,9 +1,8 @@
-def power(base, exponent=2):
-    return base ** exponent
+def book_info(title, author, year):
+    print(f"Title: {title}, Author: {author}, Year: {year}")
 
-base = float(input("Enter base: "))
-exp_choice = input("Enter exponent (leave blank for default 2): ")
-if exp_choice.strip() == "":
-    print(power(base))
-else:
-    print(power(base, float(exp_choice)))
+title = input("Enter book title: ")
+author = input("Enter author name: ")
+year = int(input("Enter publication year: "))
+
+book_info(title=title, author=author, year=year)
